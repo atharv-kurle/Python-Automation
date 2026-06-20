@@ -86,32 +86,32 @@ chart = PieChart()
 data = Reference(
     marks_sheet,
     min_col=2,
-#     min_row=1,
-#     max_row=4
-# )
+    min_row=1,
+    max_row=4
+)
 
-# # add data to chart
-# chart.add_data(
-#     data,
-#     titles_from_data=True
-# )
+# add data to chart
+chart.add_data(
+    data,
+    titles_from_data=True
+)
 
-# # get reference of categories
-# categories = Reference(
-#     marks_sheet,
-#     min_col=1,
-#     min_row=2,
-#     max_row=4
-# )
+# get reference of categories
+categories = Reference(
+    marks_sheet,
+    min_col=1,
+    min_row=2,
+    max_row=4
+)
 
-# # add categories in chart
-# chart.set_categories(categories)
+# add categories in chart
+chart.set_categories(categories)
 
-# # add chart in sheet
-# marks_sheet.add_chart(
-#     chart,
-#     "D2"
-# )
+# add chart in sheet
+marks_sheet.add_chart(
+    chart,
+    "D2"
+)
 
 # save changes in the new excel
-# workbook.save("std_marks_summary.xlsx")
+workbook.save("std_marks_summary.xlsx")
