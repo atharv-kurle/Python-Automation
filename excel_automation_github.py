@@ -47,18 +47,18 @@ lowest = min(total_std_marks)
 # create new sheet 
 marks_report = workbook.create_sheet("marks_report")
 
-# add data into new sheet
-marks_report["A1"] = "Total marks"
-marks_report["B1"] = total
+# # add data into new sheet
+# marks_report["A1"] = "Total marks"
+# marks_report["B1"] = total
 
-marks_report["A2"] = "Average"
-marks_report["B2"] = average
+# marks_report["A2"] = "Average"
+# marks_report["B2"] = average
 
-marks_report["A3"] = "Highest"
-marks_report["B3"] = average
+# marks_report["A3"] = "Highest"
+# marks_report["B3"] = average
 
-marks_report["A4"] = "Lowest"
-marks_report["B4"] = lowest
+# marks_report["A4"] = "Lowest"
+# marks_report["B4"] = lowest
 
 # data bold of excel
 for row in range(1, marks_sheet.max_row+1):
